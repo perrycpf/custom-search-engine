@@ -1,0 +1,104 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    height: 100%;
+    text-align: center;
+    font-size: 19px;
+    text-emphasis: bolder;
+    color:#575555;
+    line-height: 1.5;
+}
+.gifImage {
+    max-height: 500px;
+    max-width: 500px;
+}
+.gifDiv {
+    float:left;
+    margin: 2px;
+}
+.movieDiv {
+    float:left;
+    margin: 8px;   
+    display:table;
+}
+.caption {
+    display: table-caption;
+    caption-side: top;
+    font-size: 16px;
+}
+.movieImage {
+    max-width: 225px;
+}
+.newsList {
+    text-align: left;
+    display: list-item;
+    list-style-position: inside;
+    word-wrap: break-word;
+    list-style: decimal;
+}
+h1 {
+    font-weight: 900;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.btnKeyword {
+    justify-content: center;
+    color:blue;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    border: unset;
+    margin-bottom: 5px;
+}
+.btnKeyword:hover {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    border: solid 1px;
+    border-color: white;
+}
+label {
+    text-transform: capitalize;
+    text-align: left;
+    display: inherit;
+}
+h3 {
+    margin-bottom: 5px;
+}
+h2 {
+    color: black;
+    font-family: 'Libre Baskerville', serif;
+    margin-bottom: 5px;
+}
+.pubDate {
+    font-style: italic
+}
+.webURL {
+    font-size: 15px;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+/* sm */
+@media screen and (max-width: 768px) {
+    body, .btn, #searchTab, label {font-size: 0.9em;}
+    h1 {font-size: 100%}
+    h2 {font-size: 17px}
+    h3 {font-size: 15px}
+}
+/* md */
+@media screen and (min-width: 992px) {
+    body, .btn, #searchTab, label {font-size: 1em;}
+    h1 {font-size: 200%}
+    h2 {font-size: 19px}
+    h3 {font-size: 17px}
+}
+/* log */
+@media screen and (min-width: 1200px) {
+    body, .btn, #searchTab, label {font-size: 1.1em;}
+    h1 {font-size: 300%}
+    h2 {font-size: 22px}
+    h3 {font-size: 19px}
+}

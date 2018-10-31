@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Custom Search Engine</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale =1">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <!-- Reset CSS -->
+        <link href="assets/css/reset.css" rel="stylesheet">
+        <!-- My CSS -->
+        <link href="assets/css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>                    
+                    <span style='color: blue'>C</span>
+                    <span style='color: red'>u</span>
+                    <span style='color: yellow'>s</span>
+                    <span style='color: blue'>t</span>
+                    <span style='color: green'>o</span>
+                    <span style='color: red'>m&nbsp</span>
+                    <span style='color: blue'>S</span>
+                    <span style='color: red'>e</span>
+                    <span style='color: yellow'>a</span>
+                    <span style='color: blue'>r</span>
+                    <span style='color: green'>c</span>
+                    <span style='color: red'>h</span>
+                </h1>
+            </header>
+            <div class="row col-12">
+                <div id="buttons-view"></div>
+            </div>
+            <div class="row"> 
+                <div class="col-8">
+                    <ul class="nav nav-tabs" id="searchTab">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#giphy-page" id="giphy-tab" data-toggle="tab">Giphy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#movie-page" id="movie-tab" data-toggle="tab">Movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#news-page" id="news-tab" data-toggle="tab">News</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="searchedPages">
+                        <div class="tab-pane fade show active" id="giphy-page" role="tabpanel">Powered by Giphy</div>
+                        <div class="tab-pane fade" id="movie-page" role="tabpanel">Powered by OMDb</div>
+                        <div class="tab-pane fade" id="news-page" role="tabpanel">Powered by New York Times</div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <form id="search-form" class="form-group">
+                        <label for="search-input">enter keyword</label>
+                        <input type="text" id="search-input">
+                        <a id="add-keyword" type="submit" class="btn pull-left"><i class="fa fa-plus-square-o"></i></a>
+                        <a id="clear-keyword" type="submit" class="btn pull-left"><i class="fa fa-trash"></i></a>
+                    </form>
+                </div>        
+            </div>
+        </div>
+        <!-- JQuery CDN -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Bootstrap Javascript CDN-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <!-- Game program logic-->
+        <script src="assets/javascript/app.js"></script>
+    </body>
+</html>
